@@ -108,7 +108,7 @@ def my_gen(time_seq, path, image_folder, mask_folder,
                 mask_array = []
 
                 # the mask shape (batch_size, sequence, 256, 256, 5)
-                # the image shape (batch_size, seq, 256, 256, 5)
+                # the image shape (batch_size, seq, 256, 256, Channel)
 
                 yield train_x, mask_y
 
