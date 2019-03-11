@@ -141,7 +141,7 @@ def validation_generator(time_seq, path, image_folder, mask_folder,
             # print(batch_x.shape)
             batch_x = np.expand_dims(batch_x, axis=0)  # expand the batch axis
             batch_y = np.expand_dims(batch_y, axis=0)
-            # print(batch_x.shape)  # (1, 3, 256, 256)
+            # print(batch_x.shape)  # (1, 3, 256, 256，1)
             time_array.append(batch_x)
             mask_array.append(batch_y)
             if counter % batch_size == 0:
